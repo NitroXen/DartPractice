@@ -24,18 +24,6 @@ void main() {
   print(g.first);
 
   print("-------------------------------------------------------");
-  // Condicionales
-
-  if (a > 20) {
-    print("a es mayor que 20");
-  }
-
-  if (!c) {
-    print("C is True");
-  } else {
-    print("C is False");
-  }
-  print("-------------------------------------------------------");
 
   // Ciclos
 
