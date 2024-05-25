@@ -69,18 +69,17 @@ void main() {
   // var url = 'https://rickandmortyapi.com/api/character/1';
 
   var jsonString = '''
-  [
-    {"score": 40},
-    {"score": 80},
-    {"score": 100},
-    {"score": 60},
-  ]
-    ''';
+    {"score1": 40},
+    {"score3": 80},
+    {"score2": 100},
+    {"score4": 60},
+    {"score5": 75},
+  ''';
 
   var code = jsonEncode(jsonString);
   var real = jsonDecode(code);
 
-  print(real);
+  print("Puntuacion: ${real['score2']}");
 }
 
 bool isPar(int num) => num % 2 == 0;
