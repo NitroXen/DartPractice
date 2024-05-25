@@ -1,4 +1,4 @@
-import 'dart:math';
+import 'dart:math' as math;
 
 int suma(int x, int y) {
   return x + y;
@@ -21,13 +21,13 @@ double resto(double x, double y) {
 }
 
 double circulo(double radio) {
-  return radio * radio * 3.1416;
+  return radio * radio * math.pi;
 }
 
 double area(double radio) {
-  return radio * radio * 3.1416 * 2;
+  return radio * radio * math.pi * 2;
 }
 
 double circunferencia(double radio) {
-  return radio * 2 * 3.1416;
+  return radio * 2 * math.pi;
 }
