@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
-import 'rick.dart';
+import 'mates.dart';
 
 void main() {
   // Hello World
@@ -26,12 +26,20 @@ void main() {
   print("-------------------------------------------------------");
 
   // Funciones
-  var result = sum(5, 10);
+  var result = suma(3, 8);
   print(result);
 
   var par = isPar(6);
   var impar = isPar(1);
   print("$par vs $impar");
+
+  // funciones importadas "mates.dart"
+
+  print(circulo(4));
+
+  print(area(4));
+
+  print(resto(200, 15));
 
   print("-------------------------------------------------------");
 
@@ -58,7 +66,7 @@ void main() {
 
   //json
 
-  var url = 'https://rickandmortyapi.com/api/character/1';
+  // var url = 'https://rickandmortyapi.com/api/character/1';
 
   var jsonString = '''
   [
@@ -69,13 +77,11 @@ void main() {
   ]
     ''';
 
-  var code = json.encode(jsonString);
+  var code = jsonEncode(jsonString);
   var real = jsonDecode(code);
 
   print(real);
 }
-
-int sum(int x, int y) => x + y;
 
 bool isPar(int num) => num % 2 == 0;
 
